@@ -1,0 +1,94 @@
+$background-color-main: #F4E5E1;
+$h1-color: #755b88;
+$body-color: #4a4a4a;
+$base-font-family: 'Poppins', sans-serif;
+
+* {
+  padding: 0;
+  margin: 0;
+}
+html {
+  background-color: $background-color-main;
+}
+body {
+  font-family: $base-font-family;
+  color: $body-color;
+}
+header {
+  margin-bottom: 4em;
+}
+main {
+  align-items: center;
+  justify-content: space-around;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+footer {
+  margin-top: 4em;
+  text-align: center;
+}
+a {
+  text-decoration: none;
+  color: #757070;
+}
+h1 {
+font-weight: 600;
+}
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 1.9rem;
+}
+h3 {
+  font-size: 1rem;
+}
+small {
+  margin: 1em;
+}
+#root {
+  display: flex;
+  justify-content: center;
+  border-top: 3px solid #757070;
+}
+.App {
+  width: 80%;
+}
+.about {
+  position: relative;
+  left: -500px;
+
+}
+.social {
+  text-align: right;
+  margin: 2em;
+  a {
+    padding: 0 5px;
+    font-size: 20px;
+    color: $body-color;
+    &:hover {
+      color: #C8ADC0;
+    }
+  }
+}
+.icon.hydrated {
+  top: 3px;
+  position: relative;
+}
+.demo {
+  margin: 1em;
+}
+.demo__img {
+  width: 325px;
+  height: 300px;
+  &:hover {
+    opacity: .7;
+    -webkit-transform: scale(.98);
+    -ms-transform: scale(.98);
+    transform: scale(.98);
+    transition: transform .5s, color .9s, opacity .9s ease;
+    //transition: 1s all ease-in-out;
+    //transform: scale(1.2);
+  }
+}
